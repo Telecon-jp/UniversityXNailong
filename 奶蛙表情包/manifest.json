@@ -1,0 +1,450 @@
+﻿[
+    {
+        "file":  "01_3_001_pengfu-daxiao.png",
+        "id":  "NW-3-001",
+        "title":  "奶蛙捧腹大笑",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-001",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/fullhd-nailong-01.jpg",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "1126x1072"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "02_3_005_chensi.png",
+        "id":  "NW-3-005",
+        "title":  "沉思的奶蛙",
+        "category":  "思考",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-005",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-03.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "902x850"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "03_3_008_zhenjing.png",
+        "id":  "NW-3-008",
+        "title":  "震惊的奶蛙",
+        "category":  "情绪",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-008",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-06.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "907x885"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "04_3_002_fenchi-pengfu.png",
+        "id":  "NW-3-002",
+        "title":  "粉色换色版捧腹大笑",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-002",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/fullhd-nailong-02.jpg",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "1102x1080"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "05_3_006_sikao.png",
+        "id":  "NW-3-006",
+        "title":  "思考的奶蛙",
+        "category":  "思考",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-006",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-04.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "911x793"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "06_3_007_daxiao-zhiqian.png",
+        "id":  "NW-3-007",
+        "title":  "大笑指前的奶蛙",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-007",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-05.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "914x823"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "07_3_010_baotou-daxiao.png",
+        "id":  "NW-3-010",
+        "title":  "抱头大笑的奶蛙",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-010",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-08.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "906x798"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "09_3_019_miyan-daxiao.png",
+        "id":  "NW-3-019",
+        "title":  "眯眼大笑",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-019",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-24.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "719x860"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "11_3_021_yangtian-daxiao.png",
+        "id":  "NW-3-021",
+        "title":  "仰天大笑",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-3-021",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/f-26.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "674x763"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "12_5_012_anfu-daxiao.png",
+        "id":  "NW-5-012",
+        "title":  "按腹大笑",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-5-012",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/e-25.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "378x465"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                241,
+                                                243,
+                                                234
+                                            ]
+                   }
+    },
+    {
+        "file":  "13_5_015_pengxin-daxiao.png",
+        "id":  "NW-5-015",
+        "title":  "捧心狂笑·动态",
+        "category":  "动态",
+        "source_format":  "GIF",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-5-015",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/e-22.gif",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "496x485"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                253,
+                                                254,
+                                                246
+                                            ]
+                   }
+    },
+    {
+        "file":  "14_5_004_tuosai.png",
+        "id":  "NW-5-004",
+        "title":  "托腮思考",
+        "category":  "思考",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-5-004",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/e-04.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "1080x942"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                253,
+                                                253,
+                                                253
+                                            ]
+                   }
+    },
+    {
+        "file":  "15_8_028_weiyun.png",
+        "id":  "NW-8-028",
+        "title":  "微愠奶蛙",
+        "category":  "情绪",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-8-028",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/l-28.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "342x224"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                184,
+                                                170,
+                                                154
+                                            ]
+                   }
+    },
+    {
+        "file":  "16_8_029_qigugu.png",
+        "id":  "NW-8-029",
+        "title":  "气鼓鼓奶蛙",
+        "category":  "情绪",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-8-029",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/l-29.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "399x532"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                255
+                                            ]
+                   }
+    },
+    {
+        "file":  "17_8_023_tushe-bixin.png",
+        "id":  "NW-8-023",
+        "title":  "吐舌比心奶蛙",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-8-023",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/l-23.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "474x498"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                255,
+                                                255,
+                                                253
+                                            ]
+                   }
+    },
+    {
+        "file":  "18_8_019_queque.png",
+        "id":  "NW-8-019",
+        "title":  "雀跃奶蛙",
+        "category":  "大笑",
+        "source_format":  "静态",
+        "source":  "https://nailong-studio.github.io/NaiLong-Universe/#w-8-019",
+        "author":  "Nailong-Studio",
+        "license":  "源仓库 MIT；角色权利归原权利人",
+        "origin":  "https://xn--yusy1ctb971x.cn/memes.html",
+        "image_url":  "https://xn--yusy1ctb971x.cn/assets/reference/l-19.webp",
+        "output":  {
+                       "size":  "768x768",
+                       "mode":  "RGBA",
+                       "format":  "PNG",
+                       "background":  "transparent",
+                       "content_crop_px":  "528x653"
+                   },
+        "cutout":  {
+                       "method":  "border-flood matting + distance ramp alpha + 0.7px feather",
+                       "background_type":  "studio",
+                       "estimated_bg_rgb":  [
+                                                252,
+                                                252,
+                                                247
+                                            ]
+                   }
+    }
+]

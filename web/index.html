@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>奶蛙 × 校徽生成器</title>
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#fff; --line:#e6e8f0; --ink:#1c1f2a; --sub:#6b7280;
+    --accent:#a2052e; --accent-soft:#fdeef2; --ok:#0f9d58; --warn:#b45309;
+    --radius:14px; --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
+  header.top{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .logo-dot{width:38px;height:38px;border-radius:50%;background:var(--accent);
+    box-shadow:inset 0 -6px 12px rgba(0,0,0,.18);flex:0 0 auto}
+  h1{font-size:21px;margin:0;letter-spacing:.2px}
+  .sub{color:var(--sub);font-size:13.5px;margin:2px 0 0}
+  .steps{display:flex;gap:8px;margin:22px 0 18px;flex-wrap:wrap}
+  .step{font-size:12.5px;color:var(--sub);background:#fff;border:1px solid var(--line);
+    padding:5px 12px;border-radius:999px}
+  .step b{color:var(--accent)}
+  main{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}
+  @media (max-width:900px){main{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:18px}
+  .card h2{font-size:15px;margin:0 0 4px;display:flex;align-items:center;gap:8px}
+  .card h2 .idx{width:20px;height:20px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent);font-size:12px;display:grid;place-items:center;font-weight:600}
+  .hint{color:var(--sub);font-size:12.5px;margin:0 0 12px}
+
+  /* 素材网格 */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .meme{border:1.5px solid var(--line);border-radius:12px;padding:8px 6px 6px;cursor:pointer;
+    background:#fbfbfd;transition:.16s;text-align:center;position:relative;overflow:hidden}
+  .meme:hover{border-color:#cfd4e3;transform:translateY(-1px)}
+  .meme img{width:100%;height:104px;object-fit:contain;display:block}
+  .meme span{display:block;font-size:12px;color:var(--sub);margin-top:4px}
+  .meme.sel{border-color:var(--accent);background:var(--accent-soft)}
+  .meme.sel span{color:var(--accent);font-weight:600}
+  .meme.sel::after{content:"✓";position:absolute;top:6px;right:8px;color:var(--accent);
+    font-size:13px;font-weight:700}
+
+  /* 上传区 */
+  .drop{border:1.5px dashed #c8ccd9;border-radius:12px;padding:20px 16px;text-align:center;
+    cursor:pointer;transition:.16s;background:#fbfbfd}
+  .drop:hover,.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+  .drop b{color:var(--accent)}
+  .drop small{display:block;color:var(--sub);margin-top:6px;font-size:12px}
+  .drop.has{padding:10px;border-style:solid}
+  .loaded{display:flex;align-items:center;gap:12px;text-align:left}
+  .loaded img{width:64px;height:64px;object-fit:contain;border-radius:8px;background:#fff;
+    border:1px solid var(--line);flex:0 0 auto}
+  .meta{font-size:12.5px;color:var(--sub);min-width:0}
+  .meta .name{color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;max-width:200px}
+  .meta b{color:var(--ink);font-family:ui-monospace,Menlo,monospace}
+  .swatch{width:22px;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.12);flex:0 0 auto}
+  .x-btn{margin-left:auto;border:none;background:transparent;color:var(--sub);cursor:pointer;
+    font-size:18px;line-height:1;padding:4px 6px;border-radius:8px}
+  .x-btn:hover{background:#eef0f6;color:var(--ink)}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;
+    border-radius:11px;padding:12px 18px;font-size:14.5px;font-weight:600;cursor:pointer;
+    transition:.16s;width:100%}
+  .btn-primary{background:var(--accent);color:#fff;margin-top:16px}
+  .btn-primary:hover:not(:disabled){filter:brightness(1.08)}
+  .btn-primary:disabled{background:#d6d9e3;color:#8d93a5;cursor:not-allowed}
+  .btn-ghost{background:#eef0f6;color:var(--ink);width:auto;padding:9px 16px;font-size:13.5px}
+  .btn-ghost:hover:not(:disabled){background:#e3e6f0}
+  .btn-ghost:disabled{opacity:.5;cursor:not-allowed}
+
+  .stage{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .pane{border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative;
+    aspect-ratio:1/1;display:grid;place-items:center;
+    background:repeating-conic-gradient(#f2f3f7 0% 25%, #fff 0% 50%) 50%/16px 16px}
+  .pane img{max-width:100%;max-height:100%;display:block}
+  .pane .tag{position:absolute;top:8px;left:8px;background:rgba(255,255,255,.92);
+    border:1px solid var(--line);border-radius:999px;font-size:11.5px;padding:2px 9px;color:var(--sub)}
+  .empty{color:#a7adbd;font-size:13px;text-align:center;padding:0 16px}
+  .actions{display:flex;gap:10px;margin-top:14px;align-items:center;flex-wrap:wrap}
+  .status{font-size:12.5px;color:var(--sub);margin-top:10px;min-height:18px}
+  .status.err{color:#c0392b}
+  .status.ok{color:var(--ok)}
+  .status.warn{color:var(--warn)}
+  .spin{width:15px;height:15px;border:2px solid rgba(255,255,255,.45);border-top-color:#fff;
+    border-radius:50%;animation:sp .7s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  footer{margin-top:26px;color:var(--sub);font-size:12px;text-align:center}
+  .warnbar{display:none;background:#fff4e5;border:1px solid #f0c48a;color:#8a4b00;
+    border-radius:12px;padding:14px 16px;margin-bottom:18px;font-size:13.5px;line-height:1.7}
+  .warnbar b{color:#b45309}
+  .warnbar code{background:#fff;border:1px solid #f0c48a;border-radius:6px;
+    padding:1px 6px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px}
+  .warnbar.on{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="warnbar" id="fileWarn">
+    <b>请通过服务地址打开页面</b><br>
+    你现在是用 <code>file://</code> 直接打开的 HTML 文件，页面连不上后台服务，所以素材无法加载、生成会失败。<br>
+    正确做法：先运行 <code>python app.py</code>（或双击 <code>启动.bat</code>），再打开
+    <code>http://127.0.0.1:8000</code>
+  </div>
+  <header class="top">
+    <div class="logo-dot"></div>
+    <div>
+      <h1>奶蛙 × 校徽生成器</h1>
+      <p class="sub">选一张奶蛙表情，上传校徽，生成专属配色表情包</p>
+    </div>
+  </header>
+
+  <div class="steps">
+    <span class="step"><b>1</b> 选择奶蛙表情</span>
+    <span class="step"><b>2</b> 上传校徽</span>
+    <span class="step"><b>3</b> 生成并下载</span>
+  </div>
+
+  <main>
+    <section class="card">
+      <h2><span class="idx">1</span>选择奶蛙表情</h2>
+      <p class="hint">从内置素材库中挑一张（这些姿态已调好参数）</p>
+      <div class="grid" id="presets"></div>
+
+      <h2 style="margin-top:22px"><span class="idx">2</span>上传校徽</h2>
+      <p class="hint">程序自动提取主色用于换色，并把校徽贴在肚皮上</p>
+      <div class="drop" id="dropLogo">
+        <b>点击选择</b> 或把校徽图片拖到这里
+        <small>白底或透明底的校徽效果最好</small>
+      </div>
+      <input type="file" id="fileLogo" accept="image/*" hidden>
+
+      <button class="btn btn-primary" id="go" disabled>开始生成</button>
+      <div class="status" id="status"></div>
+    </section>
+
+    <section class="card">
+      <h2><span class="idx">3</span>生成结果</h2>
+      <p class="hint">左侧为原图，右侧为成品</p>
+      <div class="stage">
+        <div class="pane"><span class="tag">原图</span>
+          <div class="empty" id="emptyL">选择表情后显示</div>
+          <img id="imgSrc" alt="" style="display:none">
+        </div>
+        <div class="pane"><span class="tag">成品</span>
+          <div class="empty" id="emptyR">生成后显示</div>
+          <img id="imgOut" alt="" style="display:none">
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-ghost" id="download" disabled>下载成品 PNG</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>本地运行 · 图片只在你电脑上处理，不会上传到任何服务器</footer>
+</div>
+
+<script>
+const state = { preset:null, logoDataUrl:null, outUrl:null, hex:null };
+const $ = id => document.getElementById(id);
+
+/* 用 file:// 直接打开时，后端接口不可用，给出明确提示 */
+if (location.protocol === 'file:') {
+  document.addEventListener('DOMContentLoaded', () => {
+    $('fileWarn').classList.add('on');
+  });
+  // DOM 可能已就绪，直接尝试显示
+  setTimeout(() => { const w = $('fileWarn'); if (w) w.classList.add('on'); }, 0);
+}
+const go=$('go'), statusEl=$('status'), presetsEl=$('presets');
+const imgSrc=$('imgSrc'), imgOut=$('imgOut'), emptyL=$('emptyL'), emptyR=$('emptyR');
+const downloadBtn=$('download');
+const dropLogo=$('dropLogo'), fileLogo=$('fileLogo');
+
+function setStatus(msg, cls=''){ statusEl.textContent=msg; statusEl.className='status '+cls; }
+function refreshGo(){ go.disabled = !(state.preset && state.logoDataUrl); }
+
+/* ---------- 1. 内置素材 ---------- */
+fetch('/api/presets').then(r=>r.json()).then(list=>{
+  list.forEach(m=>{
+    const d=document.createElement('div');
+    d.className='meme'; d.dataset.id=m.id;
+    d.innerHTML=`<img src="/thumb/${m.id}.png" alt="${m.label}"><span>${m.label}</span>`;
+    d.onclick=()=>{
+      document.querySelectorAll('.meme').forEach(p=>p.classList.remove('sel'));
+      d.classList.add('sel');
+      state.preset=m;
+      imgSrc.src=`/preset/${m.id}.png`;
+      imgSrc.style.display='block'; emptyL.style.display='none';
+      refreshGo();
+    };
+    presetsEl.appendChild(d);
+  });
+});
+
+/* ---------- 2. 校徽上传 ---------- */
+const dropOrig = dropLogo.innerHTML;
+dropLogo.onclick = () => fileLogo.click();
+fileLogo.onchange = e => handleLogo(e.target.files[0]);
+['dragenter','dragover'].forEach(ev => dropLogo.addEventListener(ev, e => {
+  e.preventDefault(); dropLogo.classList.add('over');
+}));
+['dragleave','drop'].forEach(ev => dropLogo.addEventListener(ev, e => {
+  e.preventDefault(); dropLogo.classList.remove('over');
+}));
+dropLogo.addEventListener('drop', e => handleLogo(e.dataTransfer.files[0]));
+
+function handleLogo(f){
+  if(!f || !f.type.startsWith('image/')){ setStatus('请选择图片文件','err'); return; }
+  const r=new FileReader();
+  r.onload = e => {
+    state.logoDataUrl = e.target.result;
+    dropLogo.classList.add('has');
+    dropLogo.innerHTML = `<div class="loaded">
+        <img src="${e.target.result}" alt="">
+        <div class="meta"><div class="name">${f.name}</div>
+          <div>主色 <b id="hexVal">解析中…</b></div></div>
+        <div class="swatch" id="swatch" style="background:#eee"></div>
+        <button class="x-btn" title="移除">×</button>
+      </div>`;
+    dropLogo.querySelector('.x-btn').onclick = ev => {
+      ev.stopPropagation();
+      state.logoDataUrl = null;
+      dropLogo.classList.remove('has');
+      dropLogo.innerHTML = dropOrig;
+      dropLogo.onclick = () => fileLogo.click();
+      refreshGo();
+      setStatus('');
+    };
+    refreshGo();
+    probeBrand();
+  };
+  r.readAsDataURL(f);
+}
+
+async function probeBrand(){
+  try{
+    const body = { logo: state.logoDataUrl, preset: state.preset ? state.preset.id : '01' };
+    const res = await fetch('/api/render',{method:'POST',
+      headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+    if(!res.ok){
+      const j = await res.json().catch(()=>({}));
+      throw new Error(j.error || ('HTTP ' + res.status));
+    }
+    const hex = res.headers.get('X-Brand-Color');
+    if(hex){
+      state.hex = hex;
+      const hv=$('hexVal'), sw=$('swatch');
+      if(hv) hv.textContent = hex;
+      if(sw) sw.style.background = hex;
+    }
+  }catch(err){
+    const hv=$('hexVal');
+    if(hv) hv.textContent = '未能识别';
+    setStatus('校徽解析失败：' + err.message, 'err');
+  }
+}
+
+/* ---------- 3. 生成 ---------- */
+go.onclick = async () => {
+  if(go.disabled) return;
+  const old = go.innerHTML;
+  go.disabled = true; go.innerHTML = '<span class="spin"></span> 生成中…';
+  setStatus('正在换色并贴合校徽…');
+  try{
+    const res = await fetch('/api/render',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ preset: state.preset.id, logo: state.logoDataUrl })});
+    if(!res.ok){
+      const j = await res.json().catch(()=>({}));
+      throw new Error(j.error || '生成失败');
+    }
+    const hex = res.headers.get('X-Brand-Color');
+    const warn = res.headers.get('X-Warn');
+    if(hex){
+      state.hex = hex;
+      const hv=$('hexVal'), sw=$('swatch');
+      if(hv) hv.textContent = hex;
+      if(sw) sw.style.background = hex;
+    }
+    const blob = await res.blob();
+    if(state.outUrl) URL.revokeObjectURL(state.outUrl);
+    state.outUrl = URL.createObjectURL(blob);
+    imgOut.src = state.outUrl; imgOut.style.display='block'; emptyR.style.display='none';
+    downloadBtn.disabled = false;
+    if(warn === 'no-belly')
+      setStatus('已生成，但这张图没检测到明显白肚皮，校徽位置可能不准','warn');
+    else
+      setStatus('生成完成','ok');
+  }catch(err){
+    setStatus(err.message,'err');
+  }finally{
+    go.innerHTML = old; refreshGo();
+  }
+};
+
+downloadBtn.onclick = () => {
+  if(!state.outUrl) return;
+  const a=document.createElement('a');
+  a.href=state.outUrl;
+  a.download=`naiwa_${state.preset?state.preset.label:'out'}_${state.hex||''}.png`;
+  a.click();
+};
+</script>
+</body>
+</html>

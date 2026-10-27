@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffaf0">
+  <meta name="description" content="澶х瑧銆佹矇鎬濄€侀渿鎯婏紝鎸戜竴鍙ザ铔欐浛浣犲洖銆傛寜鍒嗙被鏌ユ壘闈欐€佽〃鎯呬笌 GIF锛岄瑙堝ぇ鍥俱€佹敹钘忥紝骞舵煡鐪嬪師濮嬫潵婧愩€?>
+  <title>濂惰洐琛ㄦ儏鍖?路 濂惰洐瀹囧畽</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body data-page="memes">
+<svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01" stroke-width="3.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 7 .9-5.1 4.9 1.2 6.9-6.2-3.3L5.8 21 7 14.1 1.9 9.2l7-.9Z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1"/><path d="m3 16 5-5 5 5 3-3 5 5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-game" viewBox="0 0 24 24"><path d="M7 6h10c3 0 4 4 4 9s-3 5-5 1H8c-2 4-5 4-5-1s1-9 4-9Z"/><path d="M8 9v6m-3-3h6m5-1h.01m2 3h.01"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14m0-10H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  </defs></svg>
+<a class="skip-link" href="#main">璺冲埌涓昏鍐呭</a>
+<header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="濂惰洐瀹囧畽棣栭〉"><span class="brand-face"><img src="assets/naiwa-cutout.png" alt="" width="52" height="52"></span><span>濂惰洐瀹囧畽<i data-comment-source="tb-eternal">濂堕棬姘稿瓨</i></span></a>
+      <nav class="main-nav" aria-label="涓诲鑸? id="main-nav">
+        <a  href="index.html">棣栭〉</a>
+        <a  href="about.html">鍏充簬鏈珯</a>
+        <a class="active" aria-current="page" href="memes.html">濂惰洐琛ㄦ儏鍖?/a>
+        <a  href="videos.html">濂惰洐瑙嗛</a>
+        <a  href="software.html">濂惰洐杞欢</a>
+        <a  href="links.html">鍙嬬珯閾炬帴</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="button sponsor-button" data-sponsor aria-haspopup="dialog" aria-controls="content-dialog"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>璧炲姪灏忕珯</button>
+        <button class="button feed-button" data-submit><svg class="icon"><use href="#i-plus"/></svg>鎴戣鎶曠</button>
+      </div>
+      <button class="menu-button" aria-label="灞曞紑瀵艰埅" aria-expanded="false" aria-controls="main-nav"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+
+<main id="main" class="wrap subpage"><nav class="breadcrumb" aria-label="闈㈠寘灞?><a href="index.html">棣栭〉</a><span aria-hidden="true">/</span><span aria-current="page">濂惰洐琛ㄦ儏鍖?/span></nav><section class="page-hero meme-page-hero"><div><span class="page-kicker">濂惰洐琛ㄦ儏鍖?路 鍢存浛宸茶涔卞洖</span><h1 data-comment-source="dy-stranger">閭ｆ垜鍛紝<br>闄岀敓浜?/h1><p>妤间笂杩樺湪缁勭粐璇█锛屾ゼ涓嬪凡缁忚濂惰洐鍗犻銆?br>澶х瑧銆佹矇鎬濄€侀渿鎯婏紝鎸戜竴寮犳浛浣犻晣妤笺€?/p><div class="page-pills"><span><b data-count="memes">鈥?/b> 鍙ザ铔欏緟鍛?/span><span>闈欐€?+ GIF</span><button data-random><svg class="icon" aria-hidden="true"><use href="#i-dice"/></svg>闅忔満鏉ヤ竴鍙?/button></div></div><div class="meme-hero-collage" aria-hidden="true"><div><img src="assets/reference/fullhd-nailong-02.jpg" alt=""><b>鍓嶆帓鎹ц吂</b></div><div><img src="assets/reference/f-06.webp" alt=""><b>妤间富浣犳潵鐪熺殑</b></div><div><img src="assets/reference/f-03.webp" alt=""><b>澶ц剳宸茶锛屾殏涓嶅洖澶?/b></div><span>鏈ゼ鐢卞ザ铔欐帴绠?/span></div></section><section class="catalog" aria-label="琛ㄦ儏鍖呯洰褰?><form id="search-form" class="search-box catalog-search" role="search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><label class="sr-only" for="search">鎼滅储鏈垎鍖?/label><input type="search" id="search" autocomplete="off" placeholder="鎼滀竴鎼滐細鎹ц吂銆佸湥璇炪€佺矇鑹层€佹€濊€冣€?><button type="submit" class="search-go" aria-label="鎼滅储"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></form><div id="search-status" class="search-status" role="status" hidden></div><div class="filter-row catalog-filters" role="group" aria-label="鍐呭鍒嗙被"><button class="filter active" data-filter="鍏ㄩ儴" aria-pressed="true">鍏ㄩ儴濂惰洐</button><button class="filter" data-filter="澶х瑧" aria-pressed="false">澶х瑧</button><button class="filter" data-filter="鎬濊€? aria-pressed="false">鎬濊€?/button><button class="filter" data-filter="鎯呯华" aria-pressed="false">鎯呯华</button><button class="filter" data-filter="鎹㈣" aria-pressed="false">鎹㈣</button><button class="filter" data-filter="鑺傛棩" aria-pressed="false">鑺傛棩</button><button class="filter" data-filter="鍔ㄦ€? aria-pressed="false">鍔ㄦ€?/button><button class="filter" data-filter="鏀惰棌" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>鎴戠殑鏀惰棌</button></div><div class="catalog-options"><span>鍏堝瓨鍥撅紝绛変笅鍘诲埆鐨勬ゼ闀囧満瀛愩€?/span><label>鍥剧墖鏍煎紡 <select id="format-filter"><option value="鍏ㄩ儴">鍏ㄩ儴鏍煎紡</option><option value="闈欐€?>闈欐€佸浘鐗?/option><option value="GIF">GIF 鍔ㄥ浘</option></select></label></div><div class="results-bar"><p id="result-count" role="status"></p><span><span data-updated>姝ｅ湪璇诲彇鏀跺綍鏃ユ湡</span></span></div><div class="meme-grid library-grid" id="meme-grid"></div><div class="empty-state" id="catalog-empty" hidden><img src="assets/reference/f-06.webp" alt=""><h3>杩欐娌℃悳鍒板ザ铔?/h3><p>璇曡瘯鍒殑鍏抽敭璇嶏紝鎴栨竻闄ゅ垎绫绘潯浠躲€?/p><button class="button secondary" data-reset>鏌ョ湅鍏ㄩ儴鍐呭</button></div><nav class="pagination" id="pagination" aria-label="琛ㄦ儏鍖呭垎椤?></nav><p class="source-footnote">鍥剧墖閫夎嚜 <a href="https://nailong-studio.github.io/NaiLong-Universe/#home" target="_blank" rel="noopener noreferrer">Nailong-Studio 濂惰洐鑹烘湳瀹囧畽</a>锛屾瘡寮犲浘鐗囧潎闄勬潵婧愩€侴IF 鐐瑰嚮鍚庢挱鏀俱€?/p></section><section class="contribute-banner"><div class="banner-face"><img src="assets/reference/e-01.webp" alt=""></div><div><h2>鍒厜鎻掔溂锛屼氦鐐瑰ザ璐с€?/h2><p>鍙堝彂鐜版柊娲讳簡锛熷甫涓婁綔鑰呭師椤碉紝绔欓暱鏍稿鍚庢敹褰曘€?/p></div><button class="button dark" data-submit>鎺ㄨ崘浣滃搧<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></section></main>
+<footer class="site-footer wrap"><div><a class="footer-brand" href="index.html">濂惰洐瀹囧畽<span>鉁?/span></a><p>鍐嶅線涓嬬炕锛屽氨鏄瀛愪簡銆?/p></div><div class="footer-meta"><a href="about.html">鍏充簬鏈珯</a><a href="links.html">鍙嬬珯閾炬帴</a><button data-submit>鍐呭鎶曠</button><a href="about.html#sources">绱犳潗涓庢敹褰曡鏄?/a><a href="admin.html">绔欓暱鍏ュ彛</a><p>闈炲畼鏂圭埍濂借€呯珯 路 <a href="about.html#sources">绱犳潗鏉ユ簮涓庝綔鑰呰嚧璋?/a></p></div></footer>
+  <button class="back-top" aria-label="鍥炲埌椤堕儴" title="鍥炲埌椤堕儴" hidden><svg class="icon"><use href="#i-arrow"/></svg></button>
+  <dialog id="content-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="鍏抽棴寮圭獥"><svg class="icon"><use href="#i-close"/></svg></button><div id="dialog-body"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p class="wrap">鍚敤 JavaScript 鍚庡彲浠ユ悳绱€佹敹钘忓拰鏌ョ湅鏈€鏂扮洰褰曘€傜礌鏉愭潵婧愪笌鏈珯浠嬬粛浠嶅彲鐩存帴闃呰銆?/p></noscript>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"daf1d02ffbee443ebdf9c8e5ba9257f8","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+

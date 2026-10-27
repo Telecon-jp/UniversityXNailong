@@ -1,0 +1,6 @@
+{
+  "_comment": "按图微调参数。未列出的图使用 RenderConfig 默认值。椭圆模式下 badge_fill_x/y 决定占肚皮的比例。",
+  "01_3_001_pengfu-daxiao.png": { "badge_ellipse": true, "badge_fill_x": 0.98, "badge_fill_y": 0.98, "badge_cy": 0.58 },
+  "02_3_005_chensi.png":        { "badge_ellipse": true, "badge_fill_x": 0.96, "badge_fill_y": 0.94, "badge_cy": 0.58 },
+  "03_3_008_zhenjing.png":      { "badge_ellipse": true, "badge_fill_x": 0.96, "badge_fill_y": 0.94, "badge_cy": 0.58 }
+}
